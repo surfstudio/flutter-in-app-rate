@@ -1,6 +1,6 @@
 name: in_app_rate
 version: "1.0.0"
-description: "Plugin use in-app review and App Store Review"
+description: "A Flutter plugin that lets you show a review pop up where users can leave a review for your app"
 repository: "https://github.com/surfstudio/flutter-in-app-rate"
 issue_tracker: "https://github.com/surfstudio/flutter-in-app-rate/issues"
 publish_to: none

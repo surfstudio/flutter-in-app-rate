@@ -4,11 +4,30 @@
 
 This package made by [Surf](https://surf.ru).
 
-## About
+## Description
 
 Plugin open native dialog for application rate/review.
 
-## Usage
+## Example
+
+```dart
+Center(
+  child: ElevatedButton(
+    onPressed: () async {
+      final isSuccess = await InAppRate.openRatingDialog(
+        onError: () =>
+            print('Error: try open url to application store'),
+      );
+      final isSuccess = await InAppRate.openRatingDialog(isTest: false)
+          .catchError((error) {
+        return false;
+      });
+      print('result is - $isSuccess');
+    },
+    child: const Text('Open dialog'),
+  ),
+),
+```
 
 ### iOS
 
